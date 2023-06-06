@@ -31,14 +31,23 @@ header nav .container {
     justify-content: center;
     height: 50px;
     font-size: 2rem;
+    margin-bottom: 140px;
+    margin-top: 30px;
+    font-size: 40px;
+    
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     /*background-color: #add8e6;*/
 }
 
+.secondari {
+    max-width: 1000px;
+    margin-top: 80px;
+
+}
 
 .sheet .container {     /*qui ci va il primo conteiner grosso*/
     max-width: 680px;
@@ -51,8 +60,8 @@ header nav .container {
 .bg-yellow {
     /*background-color: #daa520;*/
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    max-width: 100%;
 }
 
 
@@ -99,7 +108,7 @@ header nav .container {
 }
 
 .img-principale {
-    width: 850px;
+    width: 1000px;
     height: 650px;
 }
 
@@ -116,14 +125,14 @@ header nav .container {
 }
 
 .col-large {
-    width: 60%;
-    height: 600px;
+    width: 75%;
+    height: 560px;
     /*background-color: #1e90ff;*/
     
 }
 
 .col-small {
-    width: 40%;
+    width: 25%;
     /*background-color: #ffc0cb;*/
 }
 
@@ -138,23 +147,22 @@ section {
 }
 
 footer {
-    background-color: rgb(206, 219, 20);
     padding-top: 6px;
 }
 
-
+.col {
+    /*border: solid black 1px;*/
+}
 
 footer .col {
     border: 1px dashed white;
     flex-grow: 1;
-    background-color: #20b2aa;
     min-height: 300px;
 }
 
 footer .col-large {
     width: 15%;
     background-color: #f08080;
-    border-color: black;
 }
 
 footer hr {
@@ -171,7 +179,34 @@ footer hr {
 
 .footer-logo,
 .footer-btn {
-    border: 1px dashed black;
     padding: 0.5rem;
     background-color: #FFB6C1;
 }
+
+.prova-gratutita {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #3838c2;
+    width: 12rem;
+    height: 2.2rem;
+    color: white;
+    border: none;
+    
+
+}
+
+.annula {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+/*aggiumgere padding soprattutto per la lista , almeno i pallini sono interni al foglio e non esterni 
+,poi aggiungere del margin per distanziare le parole luna dalle altre , 
+, trovare il modo di sistemare la foto che e strecciata 
+,poi */
