@@ -1,73 +1,25 @@
+:root {
+    --color-primary: #0061ff;
+    --color-primary-hover: #4286f3;
+    --color-primary-light: #b4d0e7;
+    --color-dark: #000000;
+    --color-border: #d0d0d3;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-html,
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* font-size: 20px; */
 }
 
-header {
-    /*background-color: #add8e6;*/
-    padding-top: 1rem;
-    padding-bottom: 4px;
-}
-
-header nav {
-    margin-bottom: 1rem;
-}
-
-header nav .container {
-    display: flex;
-}
-
-.titolo {
-    /*background-color: #228b22;*/
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    font-size: 2rem;
-    margin-bottom: 140px;
-    margin-top: 30px;
-    font-size: 40px;
+section {
+    padding-bottom: 100px;
+    padding-top: 100px;
     
-}
-
-.container {
-    max-width: 1300px;
-    margin: 0 auto;
-    /*background-color: #add8e6;*/
-}
-
-.secondari {
-    max-width: 1000px;
-    margin-top: 80px;
-
-}
-
-.sheet .container {     /*qui ci va il primo conteiner grosso*/
-    max-width: 680px;
-    /*border: 1px dashed black;*/
-    min-height: 300px;
-    background-color: #ee82ee;
-}
-
-
-.bg-yellow {
-    /*background-color: #daa520;*/
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-}
-
-
-
-.bg-grey {
-    background-color: #d3d3d3;
 }
 
 .nav-links,
@@ -102,106 +54,133 @@ header nav .container {
     text-align: right;
 }
 
-.sheet {
-    background-color: #00008b;
-    padding: 2rem 0;
+.bg-yellow {
+    /*background-color: #daa520;*/
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
 }
 
-.img-principale {
-    width: 1000px;
-    height: 650px;
+
+#uno {
+    background-color: var(--color-primary-light);
+    padding-bottom: 0;
 }
 
-.sfondo {
-    background-color: #add8e6;
+#uno .col:nth-child(1) {
+    flex-basis: 40%;
+    padding: 0rem 1rem 0;
 }
+
+#uno .col:nth-child(2) {
+    flex-basis: 60%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#uno .jumbo-img {
+    width: 100%;
+    height: calc(100% + 40px);
+    max-height: 300px;
+    margin-bottom: -40px;
+    position: relative;
+    bottom: 0;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.container {
+    /* non capisco proprio cosa non va */
+    width: 100%;
+    max-width: 920px;
+    min-height: 100px;
+    margin: auto;
+}
+
+.container-xl {
+    max-width: 1200px;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+}
+
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.col-large,
+.col {
+    flex-grow: 1;
+    position: relative;
+    flex-basis: 0;
+}
+
+.btn {
+    padding: 0.7rem 1rem;
+    border: 0;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.card {
+    border: 1px solid var(--color-border);
+    height: 100%;
+}
+
+.card-titolo {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.full-width {
+    flex-basis: 100%;
+}
+
+footer {
+    
+}
+
+col-large,
 .col-small {
+    border: 1px dashed black;
     min-height: 300px;
 }
 
 .col-large {
-    width: 75%;
-    height: 560px;
-    /*background-color: #1e90ff;*/
+    width: 70%;
+    background-color: var(--color-primary-hover);
     
 }
 
 .col-small {
-    width: 25%;
-    /*background-color: #ffc0cb;*/
+    width: 30%;
+    background-color: var(--color-primary);
 }
 
-.box-green {
-    border: 1px dashed black;
-    min-height: 500px;
-    background-color: #228b22;
-}
-section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-footer {
-    padding-top: 6px;
-}
-
-.col {
-    /*border: solid black 1px;*/
-}
-
-footer .col {
-    border: 1px dashed white;
-    flex-grow: 1;
-    min-height: 300px;
-}
-
-footer .col-large {
-    width: 15%;
-    background-color: #f08080;
-}
-
-footer hr {
-    margin-top: 1.4rem;
-    margin-bottom: 1rem;
-}
-
-.secondary-footer {
-    background-color: #7fffd4;
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-logo,
-.footer-btn {
-    padding: 0.5rem;
-    background-color: #FFB6C1;
-}
-
-.prova-gratutita {
-    display: block;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background-color: #3838c2;
-    width: 12rem;
-    height: 2.2rem;
-    color: white;
-    border: none;
-    
+.partner.png {
+    /*display: block;*/
 
 }
-
-.annula {
-    text-decoration: none;
-    color: black;
-}
-
-
 
 
 
@@ -209,4 +188,4 @@ footer hr {
 /*aggiumgere padding soprattutto per la lista , almeno i pallini sono interni al foglio e non esterni 
 ,poi aggiungere del margin per distanziare le parole luna dalle altre , 
 , trovare il modo di sistemare la foto che e strecciata 
-,poi */
+,poi */   /* non mollare MIRACCOMANDO*/
