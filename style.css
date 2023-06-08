@@ -203,9 +203,102 @@ h1 {
     max-height: 280px;
 }
 
-.sezzione-5 {
-;
+
+
+/* da qui parte e quadrati stronzi */
+
+
+
+.squares-container {
+    display: flex;
+    position: relative;
+
 }
+
+.box-container {
+    width: calc(100% / 3);
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-container .box {
+    width: 50%;
+    /* Non abbiamo bisogno di height perchè il padre in flex,
+    ha di default align-items: stretch, quindi i figli, su allungano
+    in verticale automaticamente. */
+    /* min-height: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 218, 105);
+    border: 6px solid transparent;
+}
+
+.box-container .box:hover {
+    border-color: rgb(88, 166, 97);
+  }
+  
+  .box-container .box:hover .box-content {
+    display: block;
+  }
+  
+  .box-container .box svg {
+    width: 50%;
+    height: auto;
+    color: white;
+  }
+  
+  .box-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% / 3);
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: grey;
+    overflow: auto;
+}
+
+
+/* qui finiscono i quadrati stronzi */
+
+.shet {
+    background-color: #0061ff;
+}
+
+
+
+.foote {
+    padding-top: 0%;
+
+    width: 100%;
+    max-width: 920px;
+    min-height: 150px;
+    display: flex;
+
+}
+
+.domande {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    padding: 0.5rem ;
+}
+
+
+
+
+.ult-footer {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 
 
 
