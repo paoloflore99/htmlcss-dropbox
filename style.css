@@ -162,7 +162,9 @@ h1 {
 .full-width {
     flex-basis: 100%;
 }
-
+.box-4 {
+    background-color: #1e90ff;
+}
 .container-2 {
     width: 100%;
     max-width: 920px;
