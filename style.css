@@ -18,7 +18,7 @@ body {
 
 section {
     padding-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .nav-links,
@@ -51,18 +51,29 @@ section {
 
 .nav-login {
     text-align: right;
+    display: flex;
+    justify-content: space-around;
 }
 
 .bg-yellow {
-    /*background-color: #daa520;*/
+    background-color: white;
+    margin-bottom: 2rem;
     display: flex;
-    justify-content: space-between;
-    max-width: 100%;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: inline-block;
+    padding: 1rem 1rem;
+    flex-grow: 1;
+    
 }
 
 #uno {
     background-color: var(--color-primary-light);
     padding-bottom: 0;
+    position: relative;
 }
 
 #uno .col:nth-child(1) {
@@ -104,7 +115,13 @@ h1 {
 
 .section-title {
     margin-bottom: 2rem;
+    font-size: 2rem;
 }
+
+.input {
+    line-height: 4;
+}
+
 
 .row {
     display: flex;
@@ -131,6 +148,12 @@ h1 {
     background-color: var(--color-primary-hover);
 }
 
+.btn-secondo {
+    padding: 0.7rem 1rem;
+    border: 0;
+    border: 1px solid black;
+
+}
 .jumbo-img {
     width: 100%;
 }
@@ -142,6 +165,10 @@ h1 {
 .card {
     border: 1px solid var(--color-border);
     height: 100%;
+}
+
+.card-2 {
+    border: none;
 }
 
 .card-titolo {
@@ -162,9 +189,7 @@ h1 {
 .full-width {
     flex-basis: 100%;
 }
-.box-4 {
-    background-color: #1e90ff;
-}
+
 .container-2 {
     width: 100%;
     max-width: 920px;
@@ -207,13 +232,14 @@ h1 {
 
 
 
-/* da qui parte e quadrati stronzi */
+/* da qui parte e quadrati  */
 
 
 
 .squares-container {
     display: flex;
     position: relative;
+    font-size: 1.4rem;
 
 }
 
@@ -234,24 +260,24 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: rgb(105, 218, 105);
-    border: 6px solid transparent;
+    border: 12px solid transparent;
 }
 
 .box-container .box:hover {
     border-color: rgb(88, 166, 97);
-  }
-  
-  .box-container .box:hover .box-content {
+}
+
+.box-container .box:hover .box-content {
     display: block;
-  }
-  
-  .box-container .box svg {
+}
+
+.box-container .box svg {
     width: 50%;
     height: auto;
     color: white;
-  }
-  
-  .box-content {
+}
+
+.box-content {
     display: none;
     position: absolute;
     top: 0;
@@ -263,31 +289,52 @@ h1 {
 }
 
 
-/* qui finiscono i quadrati stronzi */
+/* qui finiscono i quadrati  */
 
 .shet {
-    background-color: #0061ff;
+    background-color: #b4d0e7;
+    position: relative;
 }
 
-
+.titolo-footer {
+    font-size: 2.4rem;
+    color: rgb(111, 53, 53);
+}
 
 .foote {
     padding-top: 0%;
-
+    justify-content: flex-start;
     width: 100%;
     max-width: 920px;
     min-height: 150px;
     display: flex;
-
 }
 
+.btn-whit {
+    border: none;
+    padding: 0.8rem;
+    /* display: flex;
+    justify-content: flex-end;*/
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 40%;
+    
+
+}
 .domande {
     width: 100%;
     min-height: 150px;
     display: flex;
     padding: 0.5rem ;
+    justify-content: center;
+    line-height: 3;
+    
 }
 
+.spazio {
+    font-size: 2rem;
+}
 
 
 
@@ -296,7 +343,33 @@ h1 {
     color: white;
     display: flex;
     justify-content: center;
+    line-height: 2;
 }
+
+.ult-footer .container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.ult-footer .container div {
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
