@@ -19,7 +19,6 @@ body {
 section {
     padding-bottom: 100px;
     padding-top: 100px;
-    
 }
 
 .nav-links,
@@ -60,7 +59,6 @@ section {
     justify-content: space-between;
     max-width: 100%;
 }
-
 
 #uno {
     background-color: var(--color-primary-light);
@@ -160,7 +158,7 @@ footer {
     
 }
 
-col-large,
+.col-large,
 .col-small {
     border: 1px dashed black;
     min-height: 300px;
@@ -169,7 +167,6 @@ col-large,
 .col-large {
     width: 70%;
     background-color: var(--color-primary-hover);
-    
 }
 
 .col-small {
@@ -177,11 +174,17 @@ col-large,
     background-color: var(--color-primary);
 }
 
-.partner.png {
-    /*display: block;*/
-
+.col-small .partner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+.jumbo-img {
+    width: 100%;
+    object-fit:
+}
 
 
 
