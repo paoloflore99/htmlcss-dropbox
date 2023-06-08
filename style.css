@@ -81,7 +81,6 @@ section {
     height: calc(100% + 40px);
     max-height: 300px;
     margin-bottom: -40px;
-    position: relative;
     bottom: 0;
     object-fit: contain;
     object-position: bottom;
@@ -132,6 +131,10 @@ h1 {
     background-color: var(--color-primary-hover);
 }
 
+.jumbo-img {
+    width: 100%;
+}
+
 .gap-2 {
     gap: 2rem;
 }
@@ -150,45 +153,65 @@ h1 {
     padding: 1rem;
 }
 
+.card-body p {
+    padding: 1rem 0;
+}
+.card.heard {
+    border-bottom: 1px solid var(--color-border);
+}
 .full-width {
     flex-basis: 100%;
 }
 
-footer {
-    
+.container-2 {
+    width: 100%;
+    max-width: 920px;
+    min-height: 100px;
+    margin: auto;
+    display: flex;
+}
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.col-large,
+.l-large,
 .col-small {
-    border: 1px dashed black;
     min-height: 300px;
 }
 
 .col-large {
-    width: 70%;
-    background-color: var(--color-primary-hover);
+    background-color: #1e90ff;
+    flex-grow: 2;
+
 }
 
 .col-small {
-    width: 30%;
-    background-color: var(--color-primary);
+    background-color: #ffc0cb;
+    flex-grow: 1;
+
 }
 
-.col-small .partner {
-    display: block;
+.ciao {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
-.jumbo-img {
-    width: 100%;
-    object-fit:
+.sopra {
+    max-width: 250px;
+    display: flex;
+    max-height: 280px;
 }
+
+.sezzione-5 {
+;
+}
+
+
 
 
 
 /*aggiumgere padding soprattutto per la lista , almeno i pallini sono interni al foglio e non esterni 
 ,poi aggiungere del margin per distanziare le parole luna dalle altre , 
 , trovare il modo di sistemare la foto che e strecciata 
-,poi */   /* non mollare MIRACCOMANDO*/
+,poi */ 
